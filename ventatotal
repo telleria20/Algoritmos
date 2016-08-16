@@ -1,0 +1,26 @@
+// ventatotal5.cpp : Defines the entry point for the console application.
+//
+
+#include "stdafx.h"
+#include <iostream>
+#include <conio.h>
+
+using namespace std;
+
+void main()
+{
+	int N,cant;
+	float precio,a=0;
+	cout<<"Ingrese cuantos tipos de productos: "<<endl;
+	cin>>N;
+	for(int i=0;i<N;i++){
+		cout<<"Ingrese la cantidad del siguiente producto: "<<endl;
+		cin>>cant;
+		cout<<"Ingrese el precio: "<<endl;
+		cin>>precio;
+		a=a+(cant*precio);
+	}
+	cout<<"total a pagar: "<<a<<endl;
+	getch();
+}
+
