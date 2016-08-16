@@ -1,0 +1,25 @@
+// interessimple4.cpp : Defines the entry point for the console application.
+//
+
+#include "stdafx.h"
+#include <iostream>
+#include <conio.h>
+
+using namespace std;
+
+void main ()
+{ 
+	float A,B,C,D,E,F,x,y;
+	cout<<"Ingrese el valor de A,B,C,D,E,F: "<<endl;
+	cin>>A;
+	cin>>B;
+	cin>>C;
+	cin>>D;
+	cin>>E;
+	cin>>F;
+	y=((A*F)-(D*C))/((A*E)-(D*B));
+	x=(F-(E*y)/D);
+	cout<<"El valor de x es: "<<x<<endl;
+	cout<<"El valor de y es : "<<y<<endl;
+	getch();
+}
